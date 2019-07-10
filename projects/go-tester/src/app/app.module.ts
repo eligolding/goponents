@@ -6,6 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 import {
   GoButtonComponent,
   GoButtonModule,
+  GoCopyModule,
   GoIconComponent,
   GoIconModule,
   GoLoaderModule,
@@ -28,6 +29,7 @@ import { AppService } from './app.service';
     BrowserAnimationsModule,
     HttpClientModule,
     GoButtonModule,
+    GoCopyModule,
     GoIconModule,
     GoLoaderModule,
     GoOffCanvasModule,

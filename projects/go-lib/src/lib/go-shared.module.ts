@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { GoAccordionModule  } from './components/go-accordion/go-accordion.module';
 import { GoButtonModule } from './components/go-button/go-button.module';
 import { GoCardModule } from './components/go-card/go-card.module';
+import { GoCopyModule } from './components/go-copy/go-copy.module';
 import { GoIconModule } from './components/go-icon/go-icon.module';
 import { GoLoaderModule } from './components/go-loader/go-loader.module';
 import { GoModalModule } from './components/go-modal/go-modal.module';
@@ -14,6 +15,7 @@ import { GoToasterModule } from './components/go-toaster/go-toaster.module';
     GoAccordionModule,
     GoButtonModule,
     GoCardModule,
+    GoCopyModule,
     GoIconModule,
     GoLoaderModule,
     GoModalModule,
@@ -25,6 +27,7 @@ import { GoToasterModule } from './components/go-toaster/go-toaster.module';
     GoAccordionModule,
     GoButtonModule,
     GoCardModule,
+    GoCopyModule,
     GoIconModule,
     GoLoaderModule,
     GoModalModule,
