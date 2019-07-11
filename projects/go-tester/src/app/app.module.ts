@@ -4,6 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 
 import {
+  GoBadgeModule,
   GoButtonComponent,
   GoButtonModule,
   GoIconComponent,
@@ -27,6 +28,7 @@ import { AppService } from './app.service';
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    GoBadgeModule,
     GoButtonModule,
     GoIconModule,
     GoLoaderModule,

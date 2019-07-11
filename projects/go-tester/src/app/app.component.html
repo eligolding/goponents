@@ -23,10 +23,15 @@
   </div>
   
   <div class="go-column go-column--100">
+    <go-badge badgeData="1231">
+      <go-icon icon="notifications"></go-icon>
+    </go-badge>
     <h4>Buttons</h4>
-    <go-button buttonIcon="home">
-      Hey
-    </go-button>
+    <go-badge badgeData="55">
+      <go-button buttonIcon="home">
+        Hey
+      </go-button>
+    </go-badge>
     <go-button buttonIcon="add_shopping_cart" buttonVariant="positive" (handleClick)="clickHey()" [useLoader]="true" #heyButton>
       Hey
     </go-button>
