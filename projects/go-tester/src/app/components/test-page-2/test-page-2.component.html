@@ -26,7 +26,7 @@
     <go-button buttonIcon="home">
       Hey
     </go-button>
-    <go-button buttonIcon="add_shopping_cart" buttonVariant="positive" (handleClick)="clickHey()" [useLoader]="true" #heyButton>
+    <go-button [isProcessing]="shopping" buttonIcon="add_shopping_cart" buttonVariant="positive" (handleClick)="clickHey()" #heyButton>
       Hey
     </go-button>
     <go-button buttonIcon="fingerprint" buttonVariant="negative">
@@ -42,6 +42,12 @@
       Dark
     </go-button>
   </div>
+
+  <form #f=ngForm (ngSubmit)="onSubmit(f)"> 
+    <go-button [isProcessing]="processing" buttonType="submit" #formSubmitButton>
+      Submit
+    </go-button>
+  </form>
 
   <div class="go-column go-column--100">
     <h4 class="go-heading-4">Toasts</h4>

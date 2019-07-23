@@ -11,10 +11,11 @@ import {
 })
 export class TestPage2Component implements OnInit {
 
-  @ViewChild('heyButton') heyButton: GoButtonComponent;
   @ViewChild('loader') loader: GoLoaderComponent;
 
   title: string = 'Test 2';
+  processing: boolean = false;
+  shopping: boolean = false;
 
   constructor(private goToasterService: GoToasterService) { }
 
@@ -26,13 +27,21 @@ export class TestPage2Component implements OnInit {
     }, 1500);
   }
 
+  onSubmit() {
+    this.processing = true;
+    setTimeout(() => {
+      this.processing = false;
+    }, 4000);
+  }
+
   stopLoaderAnimation() {
     this.loader.loaderDone = this.loader.loaderDone ? false : true;
   }
 
   clickHey(): void {
+    this.shopping = true;
     setTimeout(() => {
-      this.heyButton.reset();
+      this.shopping = false;
     }, 4000);
   }
 }

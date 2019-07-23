@@ -9,22 +9,15 @@ export class GoButtonComponent {
   @Input() buttonIcon: string;
   @Input() buttonType: string = 'button';
   @Input() buttonVariant: string;
-  @Input() useLoader: boolean;
+  @Input() isProcessing: boolean;
   @Input() useDarkTheme: boolean;
 
   @Output() handleClick = new EventEmitter<boolean>();
 
-  isProcessing: boolean = false;
-
   constructor() {}
 
   public clicked(): void {
-    this.isProcessing = this.useLoader;
     this.handleClick.emit(this.isProcessing);
-  }
-
-  public reset(): void {
-    this.isProcessing = false;
   }
 
   public classObject(): object {
