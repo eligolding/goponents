@@ -13,5 +13,5 @@ script:
   - |
     if [[ $TRAVIS_EVENT_TYPE != 'pull_request' ]];
     then
-      npm run chromatic
+      npm run chromatic -- --exit-zero-on-changes
     fi
