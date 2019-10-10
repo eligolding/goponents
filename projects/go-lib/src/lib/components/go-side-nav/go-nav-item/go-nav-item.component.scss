@@ -8,7 +8,7 @@
   @include transition(all);
 
   &:hover {
-    background: $theme-dark-bg-hover;
+    background: $theme-dark-bg-active;
   }
 }
 
@@ -28,7 +28,7 @@
 
 .go-nav-item__link--active {
   .go-nav-item__title {
-    font-weight: $weight-regular;
+    font-weight: $weight-bold;
   }
 }
 

@@ -9,7 +9,7 @@
   @include transition(all);
 
   &:hover {
-    background: $theme-dark-bg-hover;
+    background: $theme-dark-bg-active;
   }
 }
 
@@ -39,10 +39,6 @@
   height: 2.5rem;
   padding: 0.5rem;
   width: 2.5rem;
-
-  &:hover {
-    background: $theme-dark-bg;
-  }
 }
 
 .go-nav-group__expand-icon--expanded {
@@ -57,5 +53,5 @@
 }
 
 .go-nav-group--expanded {
-  background: $theme-dark-bg-active;
+  background: $base-dark;
 }
