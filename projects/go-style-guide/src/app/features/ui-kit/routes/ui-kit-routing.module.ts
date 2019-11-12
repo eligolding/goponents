@@ -46,57 +46,60 @@ import { AccordionOverviewComponent } from '../components/accordion-docs/compone
 import { SwitchToggleDocsComponent } from '../components/form-docs/components/switch-toggle-docs/switch-toggle-docs.component';
 import { RadioButtonDocsComponent } from '../components/form-docs/components/radio-button-docs/radio-button-docs.component';
 import { CheckboxDocsComponent } from '../components/form-docs/components/checkbox-docs/checkbox-docs.component';
+import {ShellComponent} from '../../../shell/shell.component';
 
 const routes: Routes = [
-  { path: 'ui-kit', component: UiKitComponent },
-  { path: 'ui-kit/accordion', component: AccordionDocsComponent, children: [
-    { path: '', component: AccordionOverviewComponent },
-    { path: 'panel', component: AccordionPanelDocsComponent }
-  ]},
-  { path: 'ui-kit/accordion-panel', component: AccordionPanelDocsComponent },
-  { path: 'ui-kit/action-sheet', component: ActionSheetDocsComponent, children: [
-    { path: '', component: ActionSheetOverviewComponent },
-    { path: 'panel', component: ActionSheetPanelDocsComponent }
-  ]},
-  { path: 'ui-kit/badge', component: BadgeDocsComponent },
-  { path: 'ui-kit/button', component: ButtonDocsComponent },
-  { path: 'ui-kit/card', component: CardDocsComponent },
-  { path: 'ui-kit/configuration', component: ConfigurationDocsComponent },
-  { path: 'ui-kit/copy', component: CopyDocsComponent },
-  { path: 'ui-kit/forms', component: FormDocsComponent, children: [
-    { path: '', component: FormsOverviewComponent },
-    { path: 'checkbox', component: CheckboxDocsComponent },
-    { path: 'datepicker', component: DatepickerDocsComponent },
-    { path: 'file-upload', component: FileUploadDocsComponent },
-    { path: 'input', component: InputDocsComponent },
-    { path: 'radio', component: RadioButtonDocsComponent },
-    { path: 'select', component: SelectDocsComponent },
-    { path: 'switch-toggle', component: SwitchToggleDocsComponent },
-    { path: 'textarea', component: TextAreaDocsComponent }
-  ]},
-  { path: 'ui-kit/icon-button', component: IconButtonDocsComponent },
-  { path: 'ui-kit/layout', component: LayoutDocsComponent, children: [
-    { path: '', component: LayoutOverviewComponent },
-    { path: 'header', component: LayoutHeaderComponent },
-    { path: 'search', component: LayoutSearchComponent },
-    { path: 'side-nav', component: LayoutNavComponent },
-    { path: 'footer', component: LayoutFooterComponent },
-    { path: 'example', component: LayoutExampleComponent }
-  ]},
-  { path: 'ui-kit/loader', component: LoaderDocsComponent },
-  { path: 'ui-kit/icon', component: IconDocsComponent },
-  { path: 'ui-kit/modal', component: ModalDocsComponent },
-  { path: 'ui-kit/off-canvas', component: OffCanvasDocsComponent },
-  { path: 'ui-kit/table', component: TableDocsComponent, children: [
-    { path: '', component: TableOverviewComponent },
-    { path: 'actions', component: TableActionsDocsComponent },
-    { path: 'pagination', component: TablePaginationComponent },
-    { path: 'selection', component: TableSelectionComponent },
-    { path: 'server-integration', component: ServerIntegrationComponent },
-    { path: 'sorting', component: TableSortingComponent },
-    { path: 'templating', component: TableTemplatesComponent }
-  ]},
-  { path: 'ui-kit/toast', component: ToastDocsComponent }
+  {path: '', component: ShellComponent, children: [
+    { path: 'ui-kit', component: UiKitComponent },
+    { path: 'ui-kit/accordion', component: AccordionDocsComponent, children: [
+      { path: '', component: AccordionOverviewComponent },
+      { path: 'panel', component: AccordionPanelDocsComponent }
+    ]},
+    { path: 'ui-kit/accordion-panel', component: AccordionPanelDocsComponent },
+    { path: 'ui-kit/action-sheet', component: ActionSheetDocsComponent, children: [
+      { path: '', component: ActionSheetOverviewComponent },
+      { path: 'panel', component: ActionSheetPanelDocsComponent }
+    ]},
+    { path: 'ui-kit/badge', component: BadgeDocsComponent },
+    { path: 'ui-kit/button', component: ButtonDocsComponent },
+    { path: 'ui-kit/card', component: CardDocsComponent },
+    { path: 'ui-kit/configuration', component: ConfigurationDocsComponent },
+    { path: 'ui-kit/copy', component: CopyDocsComponent },
+    { path: 'ui-kit/forms', component: FormDocsComponent, children: [
+      { path: '', component: FormsOverviewComponent },
+      { path: 'checkbox', component: CheckboxDocsComponent },
+      { path: 'datepicker', component: DatepickerDocsComponent },
+      { path: 'file-upload', component: FileUploadDocsComponent },
+      { path: 'input', component: InputDocsComponent },
+      { path: 'radio', component: RadioButtonDocsComponent },
+      { path: 'select', component: SelectDocsComponent },
+      { path: 'switch-toggle', component: SwitchToggleDocsComponent },
+      { path: 'textarea', component: TextAreaDocsComponent }
+    ]},
+    { path: 'ui-kit/icon-button', component: IconButtonDocsComponent },
+    { path: 'ui-kit/layout', component: LayoutDocsComponent, children: [
+      { path: '', component: LayoutOverviewComponent },
+      { path: 'header', component: LayoutHeaderComponent },
+      { path: 'search', component: LayoutSearchComponent },
+      { path: 'side-nav', component: LayoutNavComponent },
+      { path: 'footer', component: LayoutFooterComponent },
+      { path: 'example', component: LayoutExampleComponent }
+    ]},
+    { path: 'ui-kit/loader', component: LoaderDocsComponent },
+    { path: 'ui-kit/icon', component: IconDocsComponent },
+    { path: 'ui-kit/modal', component: ModalDocsComponent },
+    { path: 'ui-kit/off-canvas', component: OffCanvasDocsComponent },
+    { path: 'ui-kit/table', component: TableDocsComponent, children: [
+      { path: '', component: TableOverviewComponent },
+      { path: 'actions', component: TableActionsDocsComponent },
+      { path: 'pagination', component: TablePaginationComponent },
+      { path: 'selection', component: TableSelectionComponent },
+      { path: 'server-integration', component: ServerIntegrationComponent },
+      { path: 'sorting', component: TableSortingComponent },
+      { path: 'templating', component: TableTemplatesComponent }
+    ]},
+    { path: 'ui-kit/toast', component: ToastDocsComponent }
+  ]}
 ];
 
 @NgModule({

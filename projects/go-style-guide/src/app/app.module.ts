@@ -22,6 +22,7 @@ import bash from 'highlight.js/lib/languages/bash';
 import typescript from 'highlight.js/lib/languages/typescript';
 import scss from 'highlight.js/lib/languages/scss';
 import xml from 'highlight.js/lib/languages/xml';
+import { ShellComponent } from './shell/shell.component';
 
 export function hljsLanguages(): any[] {
   return [
@@ -35,6 +36,7 @@ export function hljsLanguages(): any[] {
 @NgModule({
   declarations: [
     AppComponent,
+    ShellComponent,
   ],
   imports: [
     AppRoutingModule,
